@@ -13,6 +13,14 @@
       <tr>
         <td><%= org.nickname %></td>
         <td><%= org.active %></td>
+        <td>
+          <%= link_to(
+                "Activate",
+                routes.activate_organizations_path(organization: org),
+                class: "btn btn-success"
+              )
+          %>
+        </td>
       </tr>
     <% end %>
     </table>
